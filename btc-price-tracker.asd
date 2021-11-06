@@ -7,7 +7,7 @@
   :license  "MIT"
   :version "0.0.1"
   :serial t
-  :depends-on (:qtools :qtcore :qtgui :dexador :flexi-streams :st-json)
+  :depends-on (:qt-libs :qtools :qtcore :qtgui :dexador :flexi-streams :st-json)
   :components ((:file "package")
                (:file "btc-price-tracker"))
   ; below from https://github.com/Shinmera/qtools#deployment
