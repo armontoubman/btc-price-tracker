@@ -9,7 +9,9 @@
 
 
 (defun get-price ()
-  (let ((the-json (-> *url* #'dex:get #'flexi-streams:octets-to-string #'st-json:read-json)))
+  (let* ((a (dex:get *url*))
+         (b (flexi-streams:octets-to-string a))
+         (the-json (st-json:read-json b)))
     (st-json:getjso* "bpi.USD.rate" the-json)))
 
 

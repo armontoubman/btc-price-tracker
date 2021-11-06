@@ -1,6 +1,6 @@
 ;;;; package.lisp
 
 (defpackage #:btc-price-tracker
-  (:use #:cl+qt :arrow-macros)
+  (:use #:cl+qt)
   (:export :get-price
            :main))
